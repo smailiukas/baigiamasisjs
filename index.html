@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mano Svetainė</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Navigacija -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">Baigiamasis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigacija">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigacija">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Pagrindinis</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Apie</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kontaktai</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="text-white text-center py-5" style="background-image: url('img/bg.jpg'); background-size: cover;">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Sveiki atvykę į mano svetainę!</h1>
+    <p class="lead">Tai yra pavyzdinė svetainė, sukurta naudojant Bootstrap framework'ą.</p>
+    <a href="#" class="btn btn-success mt-3">Sužinokite daugiau</a>
+  </div>
+</section>
+
+<!-- Paveikslėlis -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Lorem ipsum</h2>
+  <img src="img/bg.jpg" class="img-fluid rounded mx-auto d-block" alt="Paveikslėlis" />
+</section>
+
+<!-- Kortelės -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Lorem ipsum dolor</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/bg.jpg" class="card-img-top" alt="Card 1">
+        <div class="card-body">
+          <h5 class="card-title">Lorem, ipsum.</h5>
+          <p class="card-text">Trumpas aprašymas apie objektą arba dalyką. Lorem ipsum.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/bg.jpg" class="card-img-top" alt="Card 2">
+        <div class="card-body">
+          <h5 class="card-title">Lorem, ipsum.</h5>
+          <p class="card-text">Dar vienas aprašymas. Lorem ipsum dolor sit amet consectetur.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/bg.jpg" class="card-img-top" alt="Card 3">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+          <p class="card-text">Aprašymas su daugiau teksto apie turinį, paveikslėlį ar objektą.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">DUK</h2>
+  <div class="accordion" id="dukAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">Klausimas #1</button></h2>
+      <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#dukAccordion">
+        <div class="accordion-body">Atsakymas į pirmą klausimą.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Klausimas #2</button></h2>
+      <div id="q2" class="accordion-collapse collapse" data-bs-parent="#dukAccordion">
+        <div class="accordion-body">Atsakymas į antrą klausimą.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-center py-4 bg-light">
+  © 2024 Mano Svetainė
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
